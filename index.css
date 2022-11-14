@@ -1,0 +1,304 @@
+html,
+body {
+    overflow-x: hidden;
+    /* Prevent scroll on narrow devices */
+}
+
+body {
+    padding-top: 56px;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    justify-content: flex-start;
+}
+
+.nav-link {
+    padding-left: 12px;
+    border-radius: 4px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    background-color: rgb(66, 66, 66);
+}
+
+.carousel-item {
+    max-height: 70vh;
+    height: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-height: 70vh;
+}
+
+@media (max-width: 991.98px) {
+    .offcanvas-collapse {
+        position: fixed;
+        top: 56px;
+        /* Height of navbar */
+        bottom: 0;
+        left: 0%;
+        transform: translateX(-100%);
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #343a40;
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+        padding-top: 10px;
+    }
+
+    .offcanvas-collapse.open {
+        visibility: visible;
+        transform: translateX(0%);
+    }
+}
+
+.nav-scroller .nav {
+    color: rgba(255, 255, 255, .75);
+}
+
+.nav-scroller .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+    color: #6c757d;
+}
+
+.nav-scroller .nav-link:hover {
+    color: #007bff;
+}
+
+.nav-scroller .active {
+    font-weight: 500;
+    color: #343a40;
+}
+
+.bg-purple {
+    background-color: #6f42c1;
+}
+
+.why-us-parent-container {
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.why-us-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #0000003d 0 3px 8px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.companies-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.companies-container img {
+    max-height: 40px;
+    padding: 5px 20px;
+    margin: 10px 0;
+}
+
+.customer-base-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.customer-base-container .info-container {
+    padding: 0 20px 20px;
+    text-align: center;
+}
+
+.customer-base-container .info-container .count {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #293a68;
+}
+
+.customer-base-container .info-container .info {
+    font-size: 12px;
+}
+
+.as-seen-container {
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: rgb(156, 156, 156);
+    position: relative;
+}
+
+.as-seen-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(224, 224, 224);
+    z-index: -1;
+}
+
+.as-seen-container .text {
+    background-color: white;
+    padding: 5px 25px;
+    white-space: nowrap;
+    z-index: 1;
+    font-weight: 500;
+}
+
+.price-container {
+    max-width: 350px;
+}
+
+footer .logo-container {
+    width: 20%;
+}
+
+.register-now-container button {
+    margin: 10px;
+    padding: 8px 15px;
+    border: 2px solid rgb(31, 31, 31);
+    color: rgb(31, 31, 31);
+    background-color: transparent;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.register-now-container button:hover {
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+.share-options-container {
+    display: flex;
+    margin: auto;
+}
+
+.share-options-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid rgb(39, 39, 39);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.share-options-container button:hover {
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.share-options-container button svg {
+    flex-shrink: 0;
+}
+
+.contact-parent-container .contact-info-container h3 {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.contact-parent-container .contact-info-container .background-container {
+    background: #F9F5F1;
+    border-radius: 6px;
+}
+
+.contact-parent-container .contact-info-container .background-container .body-list {
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-parent-container .contact-info-container .background-container .body-list-item .check-icon {
+    margin-right: 10px;
+    margin-top: 2px;
+    color: rgb(112, 112, 112);
+}
+
+.contact-parent-container .contact-info-container .background-container .body-list-item {
+    display: flex;
+    margin: 0 0 17px;
+    padding-top: 17px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-parent-container .contact-info-container .background-container .body-list-item:nth-child(1) {
+    border-top: none;
+}
+
+.contact-parent-container .contact-container .info-text,
+.contact-parent-container .contact-info-container .info-text,
+.contact-parent-container .contact-container .info-text a,
+.contact-parent-container .contact-info-container .info-text a {
+    color: rgb(158, 158, 158);
+}
+
+.contact-parent-container .contact-container button {
+    min-width: 180px;
+}
+
+@media only screen and (max-width: 800px) {
+    footer .logo-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .customer-base-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .customer-base-container .info-container {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .customer-base-container .info-container:nth-child(1),
+    .customer-base-container .info-container:nth-child(2) {
+        border-bottom: 1px solid rgb(227, 227, 227);
+    }
+
+    .customer-base-container .info-container:nth-child(1),
+    .customer-base-container .info-container:nth-child(3) {
+        border-right: 1px solid rgb(227, 227, 227);
+    }
+
+    .customer-base-container .info-container .count {
+        font-size: 20px;
+    }
+
+    .customer-base-container .info-container .info {
+        font-size: 10px;
+    }
+
+}
